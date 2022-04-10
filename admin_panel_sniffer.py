@@ -58,7 +58,7 @@ def main(domain, progress=0, ext="a", strict=False, save=True, visible=True, wor
     
     for link in attempts[progress:]:#loop over every page in the wordlist file
         try:
-            site = domain + "/" + link
+            site = domain + "" + link
 
             if visible:#show links as they're being tested
                 print("trying:", end=" ")
